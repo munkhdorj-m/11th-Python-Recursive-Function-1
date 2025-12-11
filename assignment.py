@@ -1,6 +1,6 @@
 def fibonacci(n):
     pass
-
+ 
 def count_digits(n):
     for i in range(10):
         print(i)
