@@ -19,6 +19,16 @@
         "comparison": "included",
         "timeout": 5,
         "points": 1
+      },
+      {
+        "name": "Exercise 3",
+        "setup": "sudo -H pip3 install -r requirements.txt",
+        "run": "pytest test_assignment.py::test3",
+        "input": "",
+        "output": "",
+        "comparison": "included",
+        "timeout": 5,
+        "points": 1
       }
     ]
   }
