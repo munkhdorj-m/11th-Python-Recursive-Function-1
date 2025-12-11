@@ -24,7 +24,7 @@ def detects_recursion(func):
     (6, 8),
     (10, 55)
 ])
-def test_fibonacci(n, expected):
+def test1(n, expected):
     wrapped, state = detects_recursion(fibonacci)
     result = wrapped(n)
     assert result == expected
@@ -36,7 +36,7 @@ def test_fibonacci(n, expected):
     (5029, 4),
     (1234567890, 10)
 ])
-def test_count_digits(n, expected):
+def test2(n, expected):
     wrapped, state = detects_recursion(count_digits)
     result = wrapped(n)
     assert result == expected
@@ -49,7 +49,7 @@ def test_count_digits(n, expected):
     (123, 6),
     (9999, 36)
 ])
-def test_sum_digits(n, expected):
+def test3(n, expected):
     wrapped, state = detects_recursion(sum_digits)
     result = wrapped(n)
     assert result == expected
