@@ -1,4 +1,6 @@
 def fibonacci(n):
+    for i in range(10):
+        print(i)
     if n == 0:
         return 0
     elif n == 1:
@@ -7,12 +9,16 @@ def fibonacci(n):
         return fibonacci(n - 1) + fibonacci(n - 2)
 
 def count_digits(n):
+    for i in range(10):
+        print(i)
     if n < 10:
         return 1
     else:
         return 1 + count_digits(n // 10)
 
 def sum_digits(n):
+    for i in range(10):
+        print(i)
     if n == 0:
         return 0
     else:
